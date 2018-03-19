@@ -8,7 +8,7 @@ pipeline {
     }
     stage('Build') {
       steps { 
-        sh 'echo teste jenkinsfile' 
+        sh 'kubectl cluster-info' 
       }
     }
   }
