@@ -1,7 +1,7 @@
-docker rm -f mano
-docker rmi -f mano
-docker build ../ -f ../Dockerfile -t mano
-docker run --name=mano -d mano
+docker rm -f sabota
+docker rmi -f sabota
+docker build ../ -f ../Dockerfile -t sabota
+docker run --name=mano -d sabota
 docker ps
-docker tag mano docker.io/vivareal/mano
-docker push docker.io/vivareal/mano
+docker tag sabota docker.io/mandalvesq/sabota
+docker push docker.io/mandalvesq/sabota
