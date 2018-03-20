@@ -8,7 +8,7 @@ pipeline {
     }
     stage('Build') {
       steps { 
-        sh 'pwd'; sh 'whereis kubectl' 
+        sh '/usr/bin/kubectl cluster-info'
       }
     }
   }
