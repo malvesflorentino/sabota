@@ -8,7 +8,7 @@ pipeline {
     }
     stage('Build') {
       steps { 
-        sh 'pwd'; sh 'echo teste-jenkins' 
+        sh 'pwd'; sh 'whoami' 
       }
     }
   }
