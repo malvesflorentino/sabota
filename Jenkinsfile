@@ -8,7 +8,7 @@ pipeline {
     }
     stage('Build') {
       steps { 
-        sh 'pwd'; sh 'whoami' 
+        sh 'pwd'; sh 'whereis kubectl' 
       }
     }
   }
