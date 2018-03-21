@@ -8,7 +8,7 @@ pipeline {
     }
     stage('Build') {
       steps {
-        sh '/bin/bash build/build.sh'
+        sh '/bin/bash build.sh'
       }
     }
   }
