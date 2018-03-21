@@ -6,4 +6,4 @@ docker run --name=sabota -d sabota
 docker ps
 docker tag sabota docker.io/vivareal/sabota:$date
 docker push docker.io/vivareal/sabota
-/usr/local/bin/./kubectl set image deployment/sabota  sabota=vivareal/sabota:$data --namespace platform
+/usr/local/bin/./kubectl set image deployment/sabota  sabota=vivareal/sabota:$date --namespace platform

@@ -66,7 +66,7 @@ def salve(message):
 @respond_to('guina', re.IGNORECASE)
 def guina(message):
     message.reply(GUINA)
-@respont_to('teste', re.IGNORECASE)
+@respond_to('teste', re.IGNORECASE)
 def teste(message):
     message.reply(TESTE)
 
