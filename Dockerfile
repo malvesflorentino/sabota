@@ -1,6 +1,6 @@
 FROM python:3.6-alpine
 
-LABEL author="Amanda Quinto" 
+LABEL author="Amanda Quinto"
 
 # add requirements file
 COPY requirements.txt /code/requirements.txt
@@ -14,4 +14,4 @@ ENV LANG en_US.UTF-8
 COPY *.py /code/
 WORKDIR /code/
 ENTRYPOINT ["python"]
-CMD ["mano.py"]
+CMD ["sabota.py"]

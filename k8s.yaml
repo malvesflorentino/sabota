@@ -1,14 +1,14 @@
 apiVersion: extensions/v1beta1
 kind: Deployment
 metadata:
-  name: mano
+  name: sabota
   labels:
-    app: mano
+    app: sabota
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: mano
+      app: sabota
   strategy:
     rollingUpdate:
       maxSurge: 1
@@ -17,28 +17,28 @@ spec:
   template:
     metadata:
       labels:
-        app: mano
+        app: sabota
         version: v3
     spec:
       containers:
-      - name: mano
-        image: vivareal/mano
+      - name: sabota
+        image: vivareal/sabota
         env:
         - name: SLACK_API_TOKEN
           valueFrom:
             secretKeyRef:
               key: SLACK_API_TOKEN
-              name: mano
+              name: sabota
         - name: aws_access_key_id
           valueFrom:
             secretKeyRef:
               key: aws_access_key_id
-              name: mano
+              name: sabota
         - name: aws_secret_access_key
           valueFrom:
             secretKeyRef:
               key: aws_secret_access_key
-              name: mano
+              name: sabota
         imagePullPolicy: Always
         resources:
           limits:
