@@ -18,11 +18,11 @@ spec:
     metadata:
       labels:
         app: sabota
-        version: v4
+        version: v5
     spec:
       containers:
       - name: sabota
-        image: vivareal/sabota
+        image: vivareal/sabota:21032018142709
         env:
         - name: SLACK_API_TOKEN
           valueFrom:
