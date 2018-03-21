@@ -1,7 +1,9 @@
-docker rm -f mano
-docker rmi -f mano
-docker build ../ -f ../Dockerfile -t mano
-docker run --name=mano -d mano
+date=$(date '+%d%m%Y%H%M%S');
+docker rm -f sabota
+docker rmi -f sabota
+docker build ../ -f ../Dockerfile -t sabota
+docker run --name=sabota -d sabota
 docker ps
-docker tag mano docker.io/vivareal/mano
-docker push docker.io/vivareal/mano
+docker tag sabota docker.io/vivareal/sabota:$date
+docker push docker.io/vivareal/sabota
+/usr/local/bin/./kubectl set image deployment/sabota  sabota=vivareal/sabota:$date --namespace platform

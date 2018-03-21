@@ -5,11 +5,4 @@ pipeline {
       steps {
         sh 'ls -la' 
       }
-    }
-    stage('Build') {
-      steps { 
-        sh 'uptime' 
-      }
-    }
-  }
-}
+   

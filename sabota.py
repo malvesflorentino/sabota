@@ -15,7 +15,8 @@ HELP = """Salve.
 
 
 INFO_STATUS = "\nManda *status APP* pra ver a fita."
-SALVE = "Salve, truta. "
+SALVE = "Salve, truta."
+TESTE = "Testes de Deploy"
 GUINA = "Ae mano, o Guina mandou isso aqui pra você... "
 
 @respond_to('liga (.*)$', re.IGNORECASE)
@@ -65,6 +66,9 @@ def salve(message):
 @respond_to('guina', re.IGNORECASE)
 def guina(message):
     message.reply(GUINA)
+@respond_to('teste', re.IGNORECASE)
+def teste(message):
+    message.reply(TESTE)
 
 # @respond_to('versao', re.IGNORECASE)
 # def version(message):
