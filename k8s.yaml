@@ -18,7 +18,7 @@ spec:
     metadata:
       labels:
         app: sabota
-        version: v3
+        version: v4
     spec:
       containers:
       - name: sabota
