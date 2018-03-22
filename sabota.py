@@ -16,7 +16,7 @@ HELP = """Salve.
 
 INFO_STATUS = "\nManda *status APP* pra ver a fita."
 SALVE = "Salve, truta."
-TESTE = "Webmotors"
+TESTE = "Webmotors Helias é nois"
 GUINA = "Ae mano, o Guina mandou isso aqui pra você... "
 
 @respond_to('liga (.*)$', re.IGNORECASE)
